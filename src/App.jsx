@@ -1,12 +1,13 @@
-import About from "./assets/components/About";
-import Contact from "./assets/components/Contact";
+import CakeAdmin from "./assets/components/CakeAdmin";
+import { CakeProvider } from "./assets/components/CakeContext";
+import CakeShop from "./assets/components/CakeShop";
 
 const App = () => {
   return (
-    <>
-      <About />
-      <Contact />
-    </>
+    <CakeProvider>
+      <CakeShop />
+      <CakeAdmin />
+    </CakeProvider>
   );
 };
 
