@@ -1,8 +1,13 @@
-import { useState } from "react";
-import ComponentOne from "./assets/components/ComponentOne";
+import About from "./assets/components/About";
+import Contact from "./assets/components/Contact";
 
 const App = () => {
-  const [kiwi, setKiwi] = useState(10);
-  return <ComponentOne kiwi={kiwi} />;
+  return (
+    <>
+      <About />
+      <Contact />
+    </>
+  );
 };
+
 export default App;
