@@ -1,15 +1,8 @@
-import Child from "./assets/components/Child";
-import HOC from "./assets/components/HOC";
+import { useState } from "react";
+import ComponentOne from "./assets/components/ComponentOne";
 
 const App = () => {
-  const authStatus = true;
-  return (
-    <div>
-      <HOC authStatus={authStatus}>
-        <Child />
-      </HOC>
-    </div>
-  );
+  const [kiwi, setKiwi] = useState(10);
+  return <ComponentOne kiwi={kiwi} />;
 };
-
 export default App;
